@@ -1,0 +1,5 @@
+outs:
+- md5: d13be310050783bbbf77106fad099504
+  size: 3500
+  hash: md5
+  path: Nodes_Dict.csv

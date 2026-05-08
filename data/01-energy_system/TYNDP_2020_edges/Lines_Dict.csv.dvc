@@ -1,0 +1,5 @@
+outs:
+- md5: e378b6cdda4777505ce543543d2fb6ca
+  size: 8608
+  hash: md5
+  path: Lines_Dict.csv
