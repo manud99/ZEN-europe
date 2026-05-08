@@ -1,0 +1,5 @@
+outs:
+- md5: e41e753d4130154853e8debc3f50547a
+  size: 15106
+  hash: md5
+  path: countries_centroids.csv
