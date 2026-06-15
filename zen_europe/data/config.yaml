@@ -1,7 +1,6 @@
 # global settings
 name: crystal_ball
-source_path: "./data"
-output_folder: null
+source_path: "zen_europe/data"
 
 # all settings in the system.json file with the exception of technology lists
 system:

@@ -49,6 +49,9 @@ dev = [
     "scipy-stubs"
 ]
 
+[tools.setuptools.package-data]
+zen_europe = ["data/**/*"]
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra -q"
@@ -69,7 +72,7 @@ ignore = []
 convention = "google"
 
 [tool.ruff.lint.isort]
-known-first-party = ["your_package_name"]
+known-first-party = ["zen_europe"]
 
 [tool.mypy]
 #warn_unused_configs = true

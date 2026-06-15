@@ -1,3 +1,4 @@
+from importlib.resources import files
 from pathlib import Path
 
 from zen_creator import Model
@@ -24,12 +25,12 @@ def create_model(
     write: bool = True,
 ) -> Model:
     # Get path to crystal ball model
-    zen_europe_package_dir = Path(__file__).resolve().parent.parent
-    crystal_ball_path = zen_europe_package_dir / "data" / "crystal_ball"
+    crystal_ball_path = str(files("zen_europe") / "data" / "crystal_ball")
 
     if config is None:
-        config = zen_europe_package_dir / "data" / "config.yaml"
+        config = str(files("zen_europe") / "data" / "config.yaml")
 
+    print(f"Creating model with", crystal_ball_path, config)
     # load crystal ball model as starting point
     # TODO: this should be remove in the long run and replaced
     # with model.from_config()
